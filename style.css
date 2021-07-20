@@ -1,0 +1,107 @@
+body {
+    background-color: wheat;
+}
+
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    padding: 15px;
+}
+section {
+    position: relative;
+    padding: 50px;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+#catImg {
+    width: 300px;
+    height: 250px;
+    border-radius: 10%;
+}
+
+
+#firstdiv {
+height: 500px;
+width: 300px;
+background-color: yellow;
+animation-name: rotateToRight;
+animation-duration: 2s;
+animation-direction: alternate;
+animation-iteration-count: 2;
+float: left;
+border-radius: 10%;
+box-shadow: 10px 10px 10px gray;
+
+}
+#butterfly {
+    width: 250px;
+    height: 220px;
+    padding: 22px;
+    border-radius: 10%;
+}
+
+
+#seconddiv {
+    height: 500px;
+    width: 300px;
+    background-color: red;
+    margin-left: 70px;
+    float: left;
+    margin-right: 70px;
+    border-radius: 10%;
+    animation-delay: 4s;
+    animation-name: upDown;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    box-shadow: 10px 10px 10px gray;
+
+    
+
+    
+    
+    
+}
+#weasel {
+    width: 300px;
+    height: 250px;
+    border-radius: 10%;
+}
+#thirddiv {
+    height: 500px;
+    width: 300px;
+    background-color: green;
+    float: right;
+    border-radius: 10%;
+    animation-delay: 4s;
+    animation-name: goAround;
+    animation-direction:alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    box-shadow: 10px 10px 10px gray;
+
+    
+}
+
+@keyframes rotateToRight {
+0% {}
+100% { transform: translate(1000px) rotate(360deg);
+}
+}
+
+@keyframes upDown {
+    0%{}
+    50%{transform:rotate(360deg) rotateY(360deg)}
+        100%{
+            transform: translateY(800px);
+        
+    }
+}
+
+@keyframes goAround {
+    0% {transform: rotate(360deg) translateY(800px);}
+
+
+}
